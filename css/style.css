@@ -33,6 +33,34 @@ h1{
     padding: 10px;
 }
 
+.h2-1{
+    font-size: 60px;
+    color: black;
+}
+
+#h2-2{
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+#main-2-p{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+}
+
+.main-1-p{
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+#title-CTA{
+    text-align: center;
+    font-size: 35px;
+    background-image: url(../img/stars.svg);
+}
 /*General*/
 .container{
     margin: 0 auto;
@@ -42,7 +70,7 @@ h1{
 header{
     background-image: url(../img/jumbo.png);
     background-size: cover;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     max-width: 100%;
     min-height: 500px;
 }
@@ -51,17 +79,21 @@ header > section{
     margin: 50px 0 0 0;
 }
 
-
 main aside{
-    width: 70%;
+    display: flex;
+    width: 60%;
 }
 
 main article{
-    width: 30%;
+    width: 40%;
+}
+
+.background-3{
+    min-height: 800px;
+    background-color: rgb(233, 233, 233);
 }
 
 /*Button*/
-
 .button-1{ 
     background-color: white;
     border-radius: 10px;
@@ -69,7 +101,6 @@ main article{
     padding: 5px 5px;
     margin: 5px 0;
 }
-
 
 .button-2{
     background-color: white;
@@ -87,6 +118,16 @@ main article{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.715);
 }
 
+.button-4{
+    display: flex;
+    background-color: #7289da;
+    border-radius: 10px;
+    width: max-content;
+    padding: 10px;
+    box-shadow: 0 0 20px #7289da9b;
+    margin-top: 20px;
+}
+
 .button-2 > a{
     text-decoration: none;
     color: black
@@ -96,6 +137,13 @@ main article{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
+
+.button-4 > a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
 
 /*Header*/
 .un-menu{
@@ -131,8 +179,12 @@ a {
     text-align: end;
     width: 25%;
 }
-
-
+.box-1{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 60%;
+}
 
 /*Flex Container*/
 
@@ -158,26 +210,71 @@ a {
     justify-content: space-around;
 }
 
-.box-1{
+.flex-container-2{
+    display: flex;
+    padding: 15px;
+    margin-bottom: 100px;
+}
+
+.flex-container-3{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 15px;
+    margin-bottom: 100px;
+}
+
+.cta-main{
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    width: 60%;
+    align-items: center;
 }
 
 /*Main*/
+.flex-container-2 > aside{
+    min-height: 500px;
+}
+
+.flex-container-2 > article{
+    min-height: 500px;
+    
+}
+
+.flex-container-3 > aside{
+    
+    min-height: 500px;
+}
+
+.flex-container-3 > article{
+    
+    min-height: 500px;
+}
+
+.flex-container-3 > aside article{
+    align-items: center;
+}
+
+.flex-container-2-1{
+    display: flex;
+    padding: 15px;
+}
+
+.box-2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 800px;
+    padding: 20px;
+}
 
 /*Footer*/
 
 
 
 /*Debug*/
-
-
-.debug .background-4{
+/*.debug .background-4{
     background-color:rgb(1, 204, 163);
     width:80%;
-}
+}*/
 
 /*.debug .flex-container-1{
     display: flex;
@@ -186,23 +283,25 @@ a {
     padding: 15px;
 }*/
 
-.debug .flex-container-2{
+/*.debug .flex-container-2{
     display: flex;
     padding: 15px;
     margin-bottom: 20px;
-}
+}*/
 
-.debug .flex-container-2-1{
+/*.debug .flex-container-2-1{
     display: flex;
     padding: 15px;
-}
+}*/
 
-.debug .flex-container-3{
+
+/*.debug .flex-container-3{
     display: flex;
     flex-direction: row-reverse;
     padding: 15px;
     margin-bottom: 20px;
-}
+}*/
+
 
 .debug .flex-container-4{
     display: flex;
@@ -240,25 +339,25 @@ a {
     border: 2px dashed rgb(255, 255, 255);
 }*/
 
-.debug aside{
+/*.debug aside{
     min-height: 500px;
     background-color: blue;
     border: 2px dashed black;
-}
+}*/
 
-.debug article{
+/*.debug article{
     min-height: 500px;
     background-color: pink;
     border: 2px dashed black;
-}
+}*/
 
-.debug .box-green{
+/*.debug .box-green{
     width: 100%;
     min-height: 800px;
     background-color: green;
     border: 3px dashed black;
     padding: 20px;
-}
+}*/
 
 .debug footer{
     background-color: rgb(53, 53, 53);
